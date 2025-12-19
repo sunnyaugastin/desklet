@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Desklet</title>
+  <link rel="stylesheet" href="launcher.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="logo">Desklet</div>
+
+<div class="menu-wrapper">
+  <button class="menu-button" onclick="toggleMenu()">
+    ☰ Menu
+  </button>
+
+
+  <div id="menu-dropdown" class="menu-dropdown hidden">
+    <div onclick="menuAction('save')">Save as Desktop App</div>
+    <div onclick="menuAction('rename')">Rename App</div>
+    <div onclick="menuAction('icon')">Change Icon</div>
+    <div class="divider"></div>
+    <div onclick="menuAction('about')">About Desklet</div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Your HTML Apps</h1>
+    <p class="subtitle">Run, manage and launch web apps like native software</p>
+
+    <div id="apps" class="apps"></div>
+
+    <button class="primary" onclick="desklet.addApp()">
+      + Add New HTML App
+    </button>
+  </div>
+
+  <script src="launcher.js"></script>
+</body>
+</html>
