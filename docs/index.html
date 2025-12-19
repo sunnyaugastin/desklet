@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Desklet – Run HTML, CSS & JavaScript as Windows Desktop Apps</title>
+
+  <meta name="description" content="Desklet lets you convert HTML, CSS, and JavaScript projects into native Windows desktop apps. Lightweight, fast, and developer-friendly.">
+  <meta name="keywords" content="Desklet, HTML to Desktop App, JavaScript Desktop App, Windows HTML App, Web to Desktop">
+  <meta name="author" content="Desklet">
+
+  <meta property="og:title" content="Desklet – Run HTML as Desktop Apps">
+  <meta property="og:description" content="Turn your HTML, CSS, and JavaScript projects into native Windows desktop applications with Desklet.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/sunnyaugastin/desklet">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Desklet – HTML to Desktop App">
+  <meta name="twitter:description" content="Create Windows desktop apps using HTML, CSS, and JavaScript.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+
+
+    :root {
+      --accent: #c084fc;
+      --accent-strong: #e879f9;
+      --text-main: #f8fafc;
+      --text-muted: #cbd5f5;
+      --card-bg: rgba(255, 255, 255, 0.06);
+      --border-soft: rgba(255, 255, 255, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(1200px circle at top left, #4c1d95 0%, transparent 40%),
+                  radial-gradient(1000px circle at bottom right, #701a75 0%, transparent 40%),
+                  linear-gradient(180deg, #0f172a 0%, #020617 100%);
+      color: var(--text-main);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px 100px;
+    }
+
+
+    .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  padding: 8px 8px 20px;
+}
+
+.brand img {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: white;
+  padding: 8px;
+  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.45);
+}
+
+.brand span {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  background:white;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+    header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 5vw, 3.6rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      background: linear-gradient(90deg, #e879f9, #c084fc, #a78bfa);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 760px;
+      margin: auto;
+      color: var(--text-muted);
+    }
+
+    .cta {
+      margin-top: 36px;
+    }
+
+    .cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #e879f9, #a855f7);
+      color: #020617;
+      padding: 15px 36px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 14px;
+      text-decoration: none;
+      box-shadow: 0 20px 50px rgba(168, 85, 247, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cta a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 30px 70px rgba(168, 85, 247, 0.55);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      margin-top: 80px;
+    }
+
+    .feature {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-soft);
+      border-radius: 20px;
+      padding: 34px 30px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-6px);
+      border-color: rgba(192, 132, 252, 0.5);
+    }
+
+    .feature h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .feature p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 120px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+        <a href="YOUR_LINK_HERE" class="brand">
+  <img src="logo.png" alt="Desklet Logo">
+  <span>Desklet</span>
+</a>
+
+            <p>
+        Run your HTML, CSS, and JavaScript projects as
+        native Windows desktop applications with a clean,
+        lightweight, and developer-first workflow.
+      </p>
+      <div class="cta">
+        <a href="https://github.com/sunnyaugastin/desklet/releases">
+          Download Desklet for Windows
+        </a>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Lightning Fast</h3>
+        <p>Minimal overhead and optimized runtime ensure smooth performance without heavy frameworks.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Web to Desktop</h3>
+        <p>Turn existing HTML, CSS, and JavaScript projects into Windows desktop apps instantly.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Developer Friendly</h3>
+        <p>No new stacks to learn. Build desktop apps using the web technologies you already know.</p>
+      </div>
+
+      <div class="feature">
+        <h3>Native Windows Feel</h3>
+        <p>Your apps look and behave like real Windows applications with native window controls.</p>
+      </div>
+    </section>
+
+    <footer>
+      Open-source project available on
+      <a href="https://github.com/sunnyaugastin/desklet">GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>
